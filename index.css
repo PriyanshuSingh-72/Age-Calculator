@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(105deg,rgb(88, 209, 239),rgb(89, 2, 94));
+}
+.container{
+    margin: 80px;
+}
+.inputBox{
+    margin: 20px 0px;
+    height: 50px;
+    width: 300px;
+    max-width: 400px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#inputData{
+    flex: 1;
+    padding: 5px 5px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    position: relative;
+}
+.inputBox #inputData::-webkit-calendar-picker-indicator{
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    height: auto;
+    position: absolute;
+    width: auto;
+    background-position: calc(100%-10px);
+    background-size: 0px;
+    cursor: pointer;
+}
+#Button{
+    background-color: rgb(14, 101, 69);
+    color: white;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+}
